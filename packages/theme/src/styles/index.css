@@ -1,0 +1,37 @@
+:root {
+  --huasi-primary-color: #e91e63;
+  --huasi-primary-light: #ff6090;
+  --huasi-primary-dark: #b0003a;
+  --huasi-bg-color: #fff0f5;
+  --huasi-text-color: #333;
+}
+
+.dark {
+  --huasi-primary-color: #ff6090;
+  --huasi-primary-light: #ff92c0;
+  --huasi-primary-dark: #c71585;
+  --huasi-bg-color: #1a1a2e;
+  --huasi-text-color: #e0e0e0;
+}
+
+.VPButton.medium.brand {
+  background-color: var(--huasi-primary-color);
+  border-color: var(--huasi-primary-color);
+}
+
+.VPButton.medium.brand:hover {
+  background-color: var(--huasi-primary-light);
+  border-color: var(--huasi-primary-light);
+}
+
+.VPDocFooter .edit-link-button {
+  color: var(--huasi-primary-color);
+}
+
+.VPDoc a {
+  color: var(--huasi-primary-color);
+}
+
+.VPDoc a:hover {
+  color: var(--huasi-primary-light);
+}

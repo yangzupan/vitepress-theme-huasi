@@ -1,13 +1,66 @@
 {
-  "name": "packages",
+  "name": "vitepress-theme-huasi-monorepo",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "private": true,
+  "type": "module",
+  "description": "一个花店心思的 Vitepress 主题 - Monorepo",
+  "author": {
+    "name": "杨祖攀",
+    "email": "www@yangzupan.com",
+    "url": "https://www.yangzupan.com"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.33.2"
+  "license": "MIT",
+  "homepage": "https://github.com/yangzupan/vitepress-theme-huasi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangzupan/vitepress-theme-huasi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yangzupan/vitepress-theme-huasi/issues"
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky",
+    "build": "pnpm run clean && pnpm -F vitepress-theme-huasi build",
+    "stub": "pnpm -F vitepress-theme-huasi stub",
+    "clean": "rimraf packages/theme/dist",
+    "docs:dev": "pnpm run -C packages/theme dev:docs",
+    "docs:build": "pnpm run -C packages/theme build:docs",
+    "docs:preview": "pnpm run -C packages/theme preview:docs",
+    "demo:dev": "pnpm run -C packages/demo dev",
+    "demo:build": "pnpm run -C packages/demo build",
+    "demo:preview": "pnpm run -C packages/demo preview",
+    "lint": "pnpm run lint:eslint && pnpm run lint:prettier",
+    "lint:eslint": "eslint . --ext .js,.ts,.tsx,.vue --fix",
+    "lint:prettier": "prettier ./**/*.{js,ts,tsx,vue,css} --write",
+    "cs": "changeset",
+    "cs:add": "changeset add",
+    "cs:version": "changeset version",
+    "cs:release": "pnpm run build && changeset publish",
+    "cs:status": "changeset status",
+    "cz": "git add . && git-cz",
+    "czp": "git add . && git-cz && git push"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "commitizen": "^4.3.1",
+    "cz-git": "^1.12.0",
+    "eslint": "^9.0.0",
+    "husky": "^9.0.0",
+    "prettier": "^3.0.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.0.0",
+    "unbuild": "^3.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  },
+  "packageManager": "pnpm@10.33.2",
+  "engines": {
+    "node": ">=22.0.0"
+  }
 }

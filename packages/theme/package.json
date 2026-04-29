@@ -1,8 +1,23 @@
 {
   "name": "vitepress-theme-huasi",
-  "version": "0.0.1",
-  "description": "一个花店心思的 Vitepress 主题",
-   "type": "module",
+  "version": "0.0.2",
+  "description": "一个花点心思的 Vitepress 主题",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./config": {
+      "types": "./dist/config/index.d.ts",
+      "import": "./dist/config/index.mjs",
+      "require": "./dist/config/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "author": {
     "name": "杨祖攀",
     "email": "www@yangzupan.com",
@@ -12,27 +27,34 @@
   "homepage": "https://github.com/yangzupan/vitepress-theme-huasi",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yangzupan/vitepress-theme-huasi"
+    "url": "git+https://github.com/yangzupan/vitepress-theme-huasi.git"
   },
   "bugs": {
     "url": "https://github.com/yangzupan/vitepress-theme-huasi/issues"
   },
-   "keywords": [
+  "keywords": [
     "vitepress",
     "vitepress-theme",
-    "theme"
+    "theme",
+    "blog",
+    "documentation",
+    "docs",
+    "huasi",
+    "flower"
   ],
-  "main": "src/index.ts",
-  "module": "./src/index.ts",
   "files": [
-    "src",
-    "types"
+    "dist"
   ],
   "scripts": {
     "dev:docs": "vitepress dev docs",
-    "build:docs": "vitepress build docs"
+    "build:docs": "vitepress build docs",
+    "preview:docs": "vitepress preview docs",
+    "build": "unbuild",
+    "stub": "unbuild --stub",
+    "prepublishOnly": "pnpm build"
   },
   "devDependencies": {
+    "unbuild": "^3.0.0",
     "vitepress": "catalog:"
   },
   "peerDependencies": {

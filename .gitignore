@@ -1,0 +1,47 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build outputs
+dist
+.vitepress/dist
+.vitepress/cache
+packages/*/dist
+packages/*/.vitepress/dist
+packages/*/.vitepress/cache
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Testing
+coverage
+*.lcov
+
+# Temporary files
+*.tmp
+*.temp
+.cache
+
+# Changeset (keep changelog)
+.changeset
+!.changeset/README.md
+!.changeset/config.json
