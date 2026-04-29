@@ -1,6 +1,6 @@
 {
   "name": "vitepress-theme-huasi",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "一个花点心思的 Vitepress 主题",
   "type": "module",
   "exports": {

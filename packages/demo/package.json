@@ -1,6 +1,7 @@
 {
   "name": "vitepress-theme-huasi-demo",
   "version": "0.0.1",
+  "private": true,
   "description": "vitepress-theme-huasi 演示站点",
   "type": "module",
   "scripts": {
