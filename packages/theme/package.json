@@ -1,0 +1,55 @@
+{
+  "name": "vitepress-theme-huasi",
+  "version": "0.0.1",
+  "description": "一个花店心思的 Vitepress 主题",
+   "type": "module",
+  "author": {
+    "name": "杨祖攀",
+    "email": "www@yangzupan.com",
+    "url": "https://www.yangzupan.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/yangzupan/vitepress-theme-huasi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangzupan/vitepress-theme-huasi"
+  },
+  "bugs": {
+    "url": "https://github.com/yangzupan/vitepress-theme-huasi/issues"
+  },
+   "keywords": [
+    "vitepress",
+    "vitepress-theme",
+    "theme"
+  ],
+  "exports": {
+    "./node": {
+      "types": "./node.d.ts",
+      "import": "./node.mjs",
+      "require": "./node.js",
+      "default": "./node.js"
+    },
+    "./package.json": "./package.json",
+    ".": "./src/index.ts"
+  },
+  "main": "src/index.ts",
+  "module": "./src/index.ts",
+  "files": [
+    "node.d.ts",
+    "node.js",
+    "node.mjs",
+    "src",
+    "types"
+  ],
+  "scripts": {
+    "dev:docs": "vitepress dev docs",
+    "build:docs": "vitepress build docs"
+  },
+  "devDependencies": {
+    "vitepress": "catalog:"
+  },
+  "peerDependencies": {
+    "vitepress": "catalog:"
+  },
+  "packageManager": "pnpm@10.33.2"
+}
