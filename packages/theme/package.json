@@ -22,22 +22,9 @@
     "vitepress-theme",
     "theme"
   ],
-  "exports": {
-    "./node": {
-      "types": "./node.d.ts",
-      "import": "./node.mjs",
-      "require": "./node.js",
-      "default": "./node.js"
-    },
-    "./package.json": "./package.json",
-    ".": "./src/index.ts"
-  },
   "main": "src/index.ts",
   "module": "./src/index.ts",
   "files": [
-    "node.d.ts",
-    "node.js",
-    "node.mjs",
     "src",
     "types"
   ],
