@@ -9,7 +9,7 @@ export interface HuasiConfig {
   footer?: DefaultTheme.Footer
   editLink?: DefaultTheme.EditLink
   lastUpdated?: DefaultTheme.LastUpdatedOptions
-  search?: any
+  search?: DefaultTheme.SearchOptions
   outline?: DefaultTheme.Outline
   docFooter?: DefaultTheme.DocFooter
   darkModeSwitchLabel?: string

@@ -1,10 +1,7 @@
 import { defineBuildConfig } from 'unbuild'
 
 export default defineBuildConfig({
-  entries: [
-    'src/index',
-    'src/config/index'
-  ],
+  entries: ['src/index', 'src/config/index'],
   clean: true,
   declaration: true,
   rollup: {
@@ -26,7 +23,7 @@ export default defineBuildConfig({
         const srcPath = path.join(srcStyles, file)
         const destPath = path.join(distStyles, file)
         fs.copyFileSync(srcPath, destPath)
-        console.log(`Copied ${file} to dist/styles`)
+        process.stdout.write(`Copied ${file} to dist/styles\n`)
       }
     }
   }

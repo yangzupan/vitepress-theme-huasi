@@ -170,7 +170,7 @@ import {
   withMemo,
   withModifiers,
   withScopeId
-} from "./chunk-GTBUZATQ.js";
+} from './chunk-GTBUZATQ.js'
 export {
   BaseTransition,
   BaseTransitionPropsValidators,
@@ -343,4 +343,4 @@ export {
   withMemo,
   withModifiers,
   withScopeId
-};
+}

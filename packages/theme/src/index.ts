@@ -6,6 +6,5 @@ import './styles/index.css'
 
 export default {
   extends: DefaultTheme,
-  enhanceApp({ app }) {
-  }
+  enhanceApp() {}
 } satisfies Theme

@@ -45,3 +45,6 @@ coverage
 .changeset
 !.changeset/README.md
 !.changeset/config.json
+
+
+.husky

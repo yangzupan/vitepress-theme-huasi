@@ -24,19 +24,16 @@ export default defineConfig({
       '/api/': [
         {
           text: 'API',
-          items: [
-            { text: '配置', link: '/api/config' }
-          ]
+          items: [{ text: '配置', link: '/api/config' }]
         }
       ]
     },
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/yangzupan/vitepress-theme-huasi' }
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/yangzupan/vitepress-theme-huasi' }],
 
     editLink: {
-      pattern: 'https://github.com/yangzupan/vitepress-theme-huasi/edit/main/packages/theme/docs/:path',
+      pattern:
+        'https://github.com/yangzupan/vitepress-theme-huasi/edit/main/packages/theme/docs/:path',
       text: '编辑此页'
     },
 

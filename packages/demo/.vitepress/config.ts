@@ -33,9 +33,7 @@ export default defineConfig({
       ]
     },
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/yangzupan/vitepress-theme-huasi' }
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/yangzupan/vitepress-theme-huasi' }],
 
     footer: {
       message: '基于 MIT 许可发布',

@@ -35,3 +35,6 @@
 .VPDoc a:hover {
   color: var(--huasi-primary-light);
 }
+html {
+  overflow-y: scroll;
+}
